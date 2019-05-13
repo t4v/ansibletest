@@ -3,7 +3,7 @@
   tasks:
     -
       name: "Install WebServer"
-      yum: "name=httpd state=absent"
+      yum: "name=httpd state=present"
     -
       name: "Start httpd"
-      service: "name=httpd state=stopped"
+      service: "name=httpd state=started"
